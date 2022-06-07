@@ -17,7 +17,7 @@ pipeline {
             }
         }
     }
-    stage("Build Docker") {
+    stage('Build Docker') {
         steps {
             catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE') {
                 script {

@@ -14,7 +14,7 @@ pipeline {
             steps {
                 echo 'Building...'
                 pipeline = load 'commonFunctions.groovy'
-                pipeline.buildDocker(par1, par2)
+                pipeline.buildDocker()
             }
         }
     }

@@ -22,7 +22,7 @@ pipeline {
             catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE') {
                 script {
                     // here want to call function from another file
-                    commonFunctions.buildDocker(par1, par2)
+                   load("commonFunctions.groovy").buildDocker(par1, par2)
                 }
             }
         }

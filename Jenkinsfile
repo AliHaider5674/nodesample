@@ -1,3 +1,4 @@
+@Library('my-shared-library')_
 #!/usr/bin/env groovy
 
 pipeline {

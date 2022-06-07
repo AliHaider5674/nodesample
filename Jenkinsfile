@@ -12,9 +12,11 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                echo 'Building...'
-                pipeline = load 'commonFunctions.groovy'
-                pipeline.buildDocker()
+                script {
+                    echo 'Building...'
+                    pipeline = load 'commonFunctions.groovy'
+                    pipeline.buildDocker()
+                }
             }
         }
     }

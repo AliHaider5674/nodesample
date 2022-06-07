@@ -1,5 +1,5 @@
-def buildDocker(def par, def par2) {
-  println("build docker...")
-}
+#!/usr/bin/env groovy
 
-return this;
+def call(String name = 'human') {
+    echo "Hello, ${name}."
+}

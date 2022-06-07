@@ -13,7 +13,8 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building...'
-                load("commonFunctions.groovy").buildDocker(par1, par2)
+                pipeline = load 'commonFunctions.groovy'
+                pipeline.buildDocker(par1, par2)
             }
         }
     }

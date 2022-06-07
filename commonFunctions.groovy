@@ -1,4 +1,4 @@
-def buildDocker(def par, def par2) {
+def buildDocker() {
   println("build docker...")
 }
 

@@ -2,7 +2,6 @@
 
 jenkinsfile{
 message = "hello world it is my jenkins call from another repo"
- 
 }
 /*pipeline {
 

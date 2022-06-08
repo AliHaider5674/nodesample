@@ -1,4 +1,5 @@
-@Library('my-shared-library', 'my-shared-library2')_
+@Library('my-shared-library')_
+@Library('my-shared-library2')_
 
 pipeline {
 
@@ -14,6 +15,7 @@ pipeline {
             steps {
                 script {
                     commonFunctions 'ali'
+                    sample 'ahmad'
                 }
             }
         }

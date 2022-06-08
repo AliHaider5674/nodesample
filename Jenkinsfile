@@ -1,4 +1,4 @@
-@Library('my-shared-library@master','my-shared-library2@main')_
+@Library('my-shared-library2@main')_
 
 pipeline {
 
@@ -13,8 +13,7 @@ pipeline {
         stage('Build') {
             steps {
                 script {
-                    commonFunctions 'ali'
-                    sample 
+                    sample()
                 }
             }
         }

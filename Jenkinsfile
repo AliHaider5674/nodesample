@@ -1,4 +1,4 @@
-@Library('my-shared-library2@main')_
+@Library('my-shared-library2@main') _
 
 jenkinsfile{
 message = "hello world it is my jenkins call from another repo"

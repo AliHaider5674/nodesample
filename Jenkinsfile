@@ -1,6 +1,10 @@
 @Library('my-shared-library2@main')_
 
-pipeline {
+jenkinsfile{
+message = "hello world it is my jenkins call from another repo"
+}
+
+/*pipeline {
 
     agent {
         docker {

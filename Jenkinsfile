@@ -15,7 +15,7 @@ pipeline {
             steps {
                 script {
                     commonFunctions 'ali'
-                    sample 'ahmad'
+                    sample 
                 }
             }
         }

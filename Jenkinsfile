@@ -11,7 +11,7 @@ pipeline {
         stage('Build') {
             steps {
                 script {
-                    echo "agent is working "
+                    echo "agent is working fine"
                 }
             }
         }

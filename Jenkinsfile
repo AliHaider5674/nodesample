@@ -5,7 +5,7 @@ message = "hello world it is my jenkins call from another repo"
 }
 */
 pipeline {
-    agent { label 'Built-In Node' }
+    agent any
 
     stages {
         stage('Build') {

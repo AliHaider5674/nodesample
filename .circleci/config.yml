@@ -7,8 +7,10 @@ jobs:
     steps:
       - checkout
       - run: npm install
+      - run: npm install -g cross-env
+      - run: npm install --save-dev cross-env
       - run:
-          command: npm run build:sit
+          command: npm run build:prod
           name: Build app
       
 workflows:

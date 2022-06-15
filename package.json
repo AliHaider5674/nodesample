@@ -4,11 +4,7 @@
   "description": "Sample Node.js Project",
   "main": "app.js",
   "scripts": {
-     "build": "webpack --config webpack.config.js"
-  },
-  "devDependencies": {
-    "webpack": "^5.71.0",
-    "webpack-cli": "^4.9.2"
+     
   },
   "author": "Adem Cemil YALCIN",
   "license": "ISC"

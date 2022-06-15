@@ -8,11 +8,9 @@ jobs:
       - checkout
       - run: npm install
       - run:
-          command: npm run
+          command: npm run:sit
           name: Build app
-      - persist_to_workspace:
-          root: ~/nodesample
-          paths: .
+      
 workflows:
   build_test_deploy: # this can be any name you choose
     jobs:

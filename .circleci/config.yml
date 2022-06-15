@@ -3,8 +3,9 @@ orbs:
   node: circleci/node@5.0.2
 jobs:
   build_and_test:
-    docker:
-      - image: cimg/node:lts
+    machine:
+      image: ubuntu-2004:current
+    resource_class: large
     steps:
       - checkout
       - run: npm install

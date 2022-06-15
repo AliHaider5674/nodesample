@@ -4,7 +4,11 @@
   "description": "Sample Node.js Project",
   "main": "app.js",
   "scripts": {
-     
+    "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
+    "build:prod": "cross-env NODE_ENV=production env_config=prod node build/build.js",
+    "build:sit": "cross-env NODE_ENV=production env_config=sit node build/build.js",
+    "lint": "eslint --ext .js,.vue src",
+    "test": "npm run lint"//A newly added item
   },
   "author": "Adem Cemil YALCIN",
   "license": "ISC"
